@@ -20,8 +20,9 @@
 		ED29F8A824AD684F0058D14A /* CalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F8A724AD684F0058D14A /* CalcViewController.swift */; };
 		ED29F8AA24AD6E790058D14A /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F8A924AD6E790058D14A /* DrawingViewController.swift */; };
 		ED29F8AC24AD746E0058D14A /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8AB24AD746E0058D14A /* circle.png */; };
-		ED29F8B024AD74790058D14A /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8AF24AD74790058D14A /* square.png */; };
 		ED29F8B424AD77DC0058D14A /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8B324AD77DC0058D14A /* triangle.png */; };
+		ED29F8BC24AD91F20058D14A /* square.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8BB24AD91F20058D14A /* square.png */; };
+		ED29F8BE24AD97CD0058D14A /* NumberLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,9 @@
 		ED29F8A724AD684F0058D14A /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcViewController.swift; path = ../CalcViewController.swift; sourceTree = "<group>"; };
 		ED29F8A924AD6E790058D14A /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		ED29F8AB24AD746E0058D14A /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../../../../Users/persistent/Downloads/circle.png; sourceTree = "<group>"; };
-		ED29F8AF24AD74790058D14A /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square.png; path = ../../../../../../../Users/persistent/Downloads/square.png; sourceTree = "<group>"; };
 		ED29F8B324AD77DC0058D14A /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = ../../../../../../../Users/persistent/Downloads/triangle.png; sourceTree = "<group>"; };
+		ED29F8BB24AD91F20058D14A /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square.png; path = ../../../../../../../Users/persistent/Downloads/square.png; sourceTree = "<group>"; };
+		ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +103,8 @@
 				ED29F8A324AAD98D0058D14A /* chem.png */,
 				ED29F8A524AAD9BD0058D14A /* chem.png */,
 				ED29F8AB24AD746E0058D14A /* circle.png */,
-				ED29F8AF24AD74790058D14A /* square.png */,
 				ED29F8B324AD77DC0058D14A /* triangle.png */,
+				ED29F8BB24AD91F20058D14A /* square.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +129,7 @@
 				ED29F87C24AAB6800058D14A /* LaunchScreen.storyboard */,
 				ED29F87F24AAB6800058D14A /* Info.plist */,
 				ED29F8A924AD6E790058D14A /* DrawingViewController.swift */,
+				ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */,
 			);
 			path = Test3;
 			sourceTree = "<group>";
@@ -257,8 +260,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED29F87E24AAB6800058D14A /* LaunchScreen.storyboard in Resources */,
+				ED29F8BC24AD91F20058D14A /* square.png in Resources */,
 				ED29F8B424AD77DC0058D14A /* triangle.png in Resources */,
-				ED29F8B024AD74790058D14A /* square.png in Resources */,
 				ED29F8A424AAD98D0058D14A /* chem.png in Resources */,
 				ED29F8A624AAD9BD0058D14A /* chem.png in Resources */,
 				ED29F87B24AAB6800058D14A /* Assets.xcassets in Resources */,
@@ -292,6 +295,7 @@
 				ED29F87624AAB6800058D14A /* ViewController.swift in Sources */,
 				ED29F8AA24AD6E790058D14A /* DrawingViewController.swift in Sources */,
 				ED29F8A824AD684F0058D14A /* CalcViewController.swift in Sources */,
+				ED29F8BE24AD97CD0058D14A /* NumberLineViewController.swift in Sources */,
 				ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

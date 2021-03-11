@@ -103,61 +103,6 @@
             <point key="canvasLocation" x="1650" y="748.828125"/>
         </scene>
         <!--Drawing View Controller-->
-        <scene sceneID="ipD-Ox-bri">
-            <objects>
-                <viewController id="CKG-Fq-Iza" customClass="DrawingViewController" customModule="Test3" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lYd-wh-Txp"/>
-                        <viewControllerLayoutGuide type="bottom" id="wh5-8a-ooe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="huA-VX-mNz">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-qu-95l">
-                                <rect key="frame" x="334" y="135" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="O"/>
-                                <connections>
-                                    <action selector="circle:" destination="CKG-Fq-Iza" eventType="touchUpInside" id="IMc-eT-n9G"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byi-Mn-T8F">
-                                <rect key="frame" x="226" y="135" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="▷"/>
-                                <connections>
-                                    <action selector="drawTriangle:" destination="CKG-Fq-Iza" eventType="touchUpInside" id="8uJ-Kv-3bb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdR-yX-5fq">
-                                <rect key="frame" x="442" y="135" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <state key="normal" title="▢"/>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z2Z-2I-1vT">
-                                <rect key="frame" x="234" y="362" width="300" height="300"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="circle" destination="Z2Z-2I-1vT" id="x1c-Vf-3si"/>
-                        <outlet property="img" destination="Z2Z-2I-1vT" id="Nhm-Jy-e1J"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BZi-WJ-EoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="325" y="1492"/>
-        </scene>
-        <!--Drawing View Controller-->
         <scene sceneID="pDN-oL-fsK">
             <objects>
                 <viewController id="Ufh-Y0-vsG" customClass="DrawingViewController" customModule="Test3" customModuleProvider="target" sceneMemberID="viewController">
@@ -176,11 +121,38 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="O"/>
                                 <connections>
-                                    <action selector="circle:" destination="CKG-Fq-Iza" eventType="touchUpInside" id="3CA-pq-C2N"/>
                                     <action selector="drawCircle:" destination="Ufh-Y0-vsG" eventType="touchUpInside" id="Nu0-kJ-k19"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="circle.png" translatesAutoresizingMaskIntoConstraints="NO" id="VGW-05-BB9">
+                                <rect key="frame" x="234" y="362" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zrs-Gp-tNX">
+                                <rect key="frame" x="226" y="161" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="▷"/>
+                                <connections>
+                                    <action selector="drawTriangle:" destination="Ufh-Y0-vsG" eventType="touchUpInside" id="hAo-ps-rRK"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="triangle.png" translatesAutoresizingMaskIntoConstraints="NO" id="14U-Jl-hfs">
+                                <rect key="frame" x="234" y="362" width="300" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rL-89-oQ4">
+                                <rect key="frame" x="442" y="161" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="▢"/>
+                                <connections>
+                                    <action selector="drawSquare:" destination="Ufh-Y0-vsG" eventType="touchUpInside" id="3bD-K7-f1b"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="VQr-te-DCl">
                                 <rect key="frame" x="234" y="362" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -189,11 +161,13 @@
                     </view>
                     <connections>
                         <outlet property="circle" destination="VGW-05-BB9" id="s24-W6-YVk"/>
+                        <outlet property="square" destination="VQr-te-DCl" id="aWg-Fk-pUK"/>
+                        <outlet property="triangle" destination="14U-Jl-hfs" id="S1Y-om-rnJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ho-Wt-4Yu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1021" y="1492"/>
+            <point key="canvasLocation" x="1020.3125" y="1491.796875"/>
         </scene>
         <!--Calc View Controller-->
         <scene sceneID="9Wn-8p-KAC">
@@ -477,5 +451,7 @@
     <resources>
         <image name="circle.png" width="1600" height="1600"/>
         <image name="graph.png" width="612" height="792"/>
+        <image name="square.png" width="512" height="512"/>
+        <image name="triangle.png" width="2236" height="2236"/>
     </resources>
 </document>
