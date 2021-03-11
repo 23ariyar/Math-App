@@ -56,14 +56,14 @@
 		ED29F88F24AAB6810058D14A /* Test3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED29F89324AAB6810058D14A /* Test3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3UITests.swift; sourceTree = "<group>"; };
 		ED29F89524AAB6810058D14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ED29F8A124AAD7A00058D14A /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph.png; path = ../../../../../../../Users/persistent/Downloads/graph.png; sourceTree = "<group>"; };
-		ED29F8A324AAD98D0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = ../../../../../../../Users/persistent/Downloads/chem.png; sourceTree = "<group>"; };
-		ED29F8A524AAD9BD0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = ../../../../../../../Users/persistent/Downloads/chem.png; sourceTree = "<group>"; };
+		ED29F8A124AAD7A00058D14A /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph.png; path = images/graph.png; sourceTree = "<group>"; };
+		ED29F8A324AAD98D0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = images/chem.png; sourceTree = "<group>"; };
+		ED29F8A524AAD9BD0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = images/chem.png; sourceTree = "<group>"; };
 		ED29F8A724AD684F0058D14A /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcViewController.swift; path = ../CalcViewController.swift; sourceTree = "<group>"; };
 		ED29F8A924AD6E790058D14A /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
-		ED29F8AB24AD746E0058D14A /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = ../../../../../../../Users/persistent/Downloads/circle.png; sourceTree = "<group>"; };
-		ED29F8B324AD77DC0058D14A /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = ../../../../../../../Users/persistent/Downloads/triangle.png; sourceTree = "<group>"; };
-		ED29F8BB24AD91F20058D14A /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square.png; path = ../../../../../../../Users/persistent/Downloads/square.png; sourceTree = "<group>"; };
+		ED29F8AB24AD746E0058D14A /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = images/circle.png; sourceTree = "<group>"; };
+		ED29F8B324AD77DC0058D14A /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = images/triangle.png; sourceTree = "<group>"; };
+		ED29F8BB24AD91F20058D14A /* square.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = square.png; path = images/square.png; sourceTree = "<group>"; };
 		ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberLineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,15 +220,18 @@
 				TargetAttributes = {
 					ED29F86F24AAB6800058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					ED29F88324AAB6810058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED29F86F24AAB6800058D14A;
 					};
 					ED29F88E24AAB6810058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED29F86F24AAB6800058D14A;
 					};
@@ -239,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -454,7 +458,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -467,7 +472,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -481,7 +487,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test3.app/Test3";
 			};
 			name = Debug;
@@ -495,7 +502,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test3.app/Test3";
 			};
 			name = Release;
@@ -508,7 +516,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Test3;
 			};
 			name = Debug;
@@ -521,7 +530,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Test3;
 			};
 			name = Release;
@@ -545,6 +555,7 @@
 				ED29F89A24AAB6810058D14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED29F89B24AAB6810058D14A /* Build configuration list for PBXNativeTarget "Test3Tests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +564,7 @@
 				ED29F89D24AAB6810058D14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ED29F89E24AAB6810058D14A /* Build configuration list for PBXNativeTarget "Test3UITests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +573,7 @@
 				ED29F8A024AAB6810058D14A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
