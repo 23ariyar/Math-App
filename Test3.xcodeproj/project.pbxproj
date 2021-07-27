@@ -12,6 +12,8 @@
 		ED29F87924AAB6800058D14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED29F87724AAB6800058D14A /* Main.storyboard */; };
 		ED29F87B24AAB6800058D14A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED29F87A24AAB6800058D14A /* Assets.xcassets */; };
 		ED29F87E24AAB6800058D14A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED29F87C24AAB6800058D14A /* LaunchScreen.storyboard */; };
+		ED29F88924AAB6810058D14A /* Test3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F88824AAB6810058D14A /* Test3Tests.swift */; };
+		ED29F89424AAB6810058D14A /* Test3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F89324AAB6810058D14A /* Test3UITests.swift */; };
 		ED29F8A224AAD7A00058D14A /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8A124AAD7A00058D14A /* graph.png */; };
 		ED29F8A424AAD98D0058D14A /* chem.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8A324AAD98D0058D14A /* chem.png */; };
 		ED29F8A624AAD9BD0058D14A /* chem.png in Resources */ = {isa = PBXBuildFile; fileRef = ED29F8A524AAD9BD0058D14A /* chem.png */; };
@@ -49,7 +51,11 @@
 		ED29F87D24AAB6800058D14A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED29F87F24AAB6800058D14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED29F88424AAB6810058D14A /* Test3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED29F88824AAB6810058D14A /* Test3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3Tests.swift; sourceTree = "<group>"; };
+		ED29F88A24AAB6810058D14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED29F88F24AAB6810058D14A /* Test3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Test3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED29F89324AAB6810058D14A /* Test3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test3UITests.swift; sourceTree = "<group>"; };
+		ED29F89524AAB6810058D14A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED29F8A124AAD7A00058D14A /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph.png; path = images/graph.png; sourceTree = "<group>"; };
 		ED29F8A324AAD98D0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = images/chem.png; sourceTree = "<group>"; };
 		ED29F8A524AAD9BD0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = images/chem.png; sourceTree = "<group>"; };
@@ -90,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				ED29F87224AAB6800058D14A /* Test3 */,
+				ED29F88724AAB6810058D14A /* Test3Tests */,
+				ED29F89224AAB6810058D14A /* Test3UITests */,
 				ED29F87124AAB6800058D14A /* Products */,
 				ED29F8A124AAD7A00058D14A /* graph.png */,
 				ED29F8A324AAD98D0058D14A /* chem.png */,
@@ -124,6 +132,24 @@
 				ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */,
 			);
 			path = Test3;
+			sourceTree = "<group>";
+		};
+		ED29F88724AAB6810058D14A /* Test3Tests */ = {
+			isa = PBXGroup;
+			children = (
+				ED29F88824AAB6810058D14A /* Test3Tests.swift */,
+				ED29F88A24AAB6810058D14A /* Info.plist */,
+			);
+			path = Test3Tests;
+			sourceTree = "<group>";
+		};
+		ED29F89224AAB6810058D14A /* Test3UITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED29F89324AAB6810058D14A /* Test3UITests.swift */,
+				ED29F89524AAB6810058D14A /* Info.plist */,
+			);
+			path = Test3UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED29F88924AAB6810058D14A /* Test3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED29F89424AAB6810058D14A /* Test3UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
