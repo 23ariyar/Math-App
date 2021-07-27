@@ -44,7 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeometryViewController.swift; path = ../../GeometryViewController.swift; sourceTree = "<group>"; };
+		3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryViewController.swift; sourceTree = "<group>"; };
 		ED29F87024AAB6800058D14A /* Test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED29F87324AAB6800058D14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED29F87524AAB6800058D14A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		ED29F8A124AAD7A00058D14A /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graph.png; path = images/graph.png; sourceTree = "<group>"; };
 		ED29F8A324AAD98D0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = images/chem.png; sourceTree = "<group>"; };
 		ED29F8A524AAD9BD0058D14A /* chem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chem.png; path = images/chem.png; sourceTree = "<group>"; };
-		ED29F8A724AD684F0058D14A /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalcViewController.swift; path = ../CalcViewController.swift; sourceTree = "<group>"; };
+		ED29F8A724AD684F0058D14A /* CalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcViewController.swift; sourceTree = "<group>"; };
 		ED29F8A924AD6E790058D14A /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		ED29F8AB24AD746E0058D14A /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circle.png; path = images/circle.png; sourceTree = "<group>"; };
 		ED29F8B324AD77DC0058D14A /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = triangle.png; path = images/triangle.png; sourceTree = "<group>"; };
