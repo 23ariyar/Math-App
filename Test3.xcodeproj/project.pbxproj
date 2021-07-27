@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A06740D26B0A63B00EDD567 /* GeometryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */; };
 		ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F87324AAB6800058D14A /* AppDelegate.swift */; };
 		ED29F87624AAB6800058D14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F87524AAB6800058D14A /* ViewController.swift */; };
 		ED29F87924AAB6800058D14A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED29F87724AAB6800058D14A /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GeometryViewController.swift; path = ../../GeometryViewController.swift; sourceTree = "<group>"; };
 		ED29F87024AAB6800058D14A /* Test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED29F87324AAB6800058D14A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED29F87524AAB6800058D14A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				ED29F87324AAB6800058D14A /* AppDelegate.swift */,
 				ED29F87524AAB6800058D14A /* ViewController.swift */,
 				ED29F87724AAB6800058D14A /* Main.storyboard */,
+				3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */,
 				ED29F87A24AAB6800058D14A /* Assets.xcassets */,
 				ED29F87C24AAB6800058D14A /* LaunchScreen.storyboard */,
 				ED29F87F24AAB6800058D14A /* Info.plist */,
@@ -220,18 +223,18 @@
 				TargetAttributes = {
 					ED29F86F24AAB6800058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 1250;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 					ED29F88324AAB6810058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 1250;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED29F86F24AAB6800058D14A;
 					};
 					ED29F88E24AAB6810058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 1250;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED29F86F24AAB6800058D14A;
 					};
@@ -300,6 +303,7 @@
 				ED29F8AA24AD6E790058D14A /* DrawingViewController.swift in Sources */,
 				ED29F8A824AD684F0058D14A /* CalcViewController.swift in Sources */,
 				ED29F8BE24AD97CD0058D14A /* NumberLineViewController.swift in Sources */,
+				3A06740D26B0A63B00EDD567 /* GeometryViewController.swift in Sources */,
 				ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,7 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -473,7 +477,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -488,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test3.app/Test3";
 			};
 			name = Debug;
@@ -503,7 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test3.app/Test3";
 			};
 			name = Release;
@@ -517,7 +521,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Test3;
 			};
 			name = Debug;
@@ -531,7 +535,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = Test3;
 			};
 			name = Release;
