@@ -220,18 +220,18 @@
 				TargetAttributes = {
 					ED29F86F24AAB6800058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 					};
 					ED29F88324AAB6810058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED29F86F24AAB6800058D14A;
 					};
 					ED29F88E24AAB6810058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1250;
 						ProvisioningStyle = Automatic;
 						TestTargetID = ED29F86F24AAB6800058D14A;
 					};
@@ -459,7 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -473,7 +473,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
@@ -488,7 +488,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test3.app/Test3";
 			};
 			name = Debug;
@@ -503,7 +503,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3Tests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test3.app/Test3";
 			};
 			name = Release;
@@ -517,7 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Test3;
 			};
 			name = Debug;
@@ -531,7 +531,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = Test3;
 			};
 			name = Release;
