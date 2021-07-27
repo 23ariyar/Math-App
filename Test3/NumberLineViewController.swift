@@ -10,17 +10,7 @@ import UIKit
 
 class NumberLineViewController: UIViewController {
     
-    var lowerBound: String = ""
-
-    @IBOutlet weak var lowerInput: UITextField!
-
-    @IBOutlet weak var label: UILabel!
     
-    
-    @IBAction func getV(_ sender: UIButton) {
-        
-        label.text = "Hello"
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
