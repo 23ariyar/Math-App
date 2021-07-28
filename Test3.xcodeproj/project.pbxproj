@@ -223,6 +223,7 @@
 				TargetAttributes = {
 					ED29F86F24AAB6800058D14A = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = PDA898X59V;
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
@@ -458,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PDA898X59V;
 				INFOPLIST_FILE = Test3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;
@@ -472,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PDA898X59V;
 				INFOPLIST_FILE = Test3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.connectingfuturesnow.Test3;

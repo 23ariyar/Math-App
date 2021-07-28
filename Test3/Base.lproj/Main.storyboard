@@ -115,14 +115,32 @@
                     <view key="view" contentMode="scaleToFill" id="M8z-af-QRb">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-Nf-KYa">
+                                <rect key="frame" x="282" y="886" width="204" height="118"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="204" id="Y6q-kP-LLN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="CLEAR"/>
+                                <connections>
+                                    <action selector="clearTapped:" destination="y5L-UI-3h2" eventType="touchUpInside" id="ye8-JJ-E15"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="ebX-Nf-KYa" firstAttribute="top" secondItem="Tw2-wM-MOr" secondAttribute="bottom" constant="842" id="Yd9-nK-n1C"/>
+                            <constraint firstItem="MoR-ip-oms" firstAttribute="top" secondItem="ebX-Nf-KYa" secondAttribute="bottom" constant="20" id="dWS-uP-9J4"/>
+                            <constraint firstItem="ebX-Nf-KYa" firstAttribute="centerX" secondItem="M8z-af-QRb" secondAttribute="centerX" id="fRU-UK-rpM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XQw-e8-ng4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yd-qT-gSK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="317" y="1492"/>
+            <point key="canvasLocation" x="316.40625" y="1491.796875"/>
         </scene>
         <!--Drawing View Controller-->
         <scene sceneID="pDN-oL-fsK">
