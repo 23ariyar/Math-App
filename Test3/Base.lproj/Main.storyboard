@@ -116,24 +116,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-Nf-KYa">
-                                <rect key="frame" x="282" y="886" width="204" height="118"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q65-Ly-vTJ">
+                                <rect key="frame" x="51.5" y="924" width="665" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZn-td-w9x">
+                                        <rect key="frame" x="0.0" y="0.0" width="133" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="RlQ-B5-ukt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="clearTapped:" destination="y5L-UI-3h2" eventType="touchUpInside" id="whq-oS-Upd"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2z-Aw-SiY">
+                                        <rect key="frame" x="133" y="0.0" width="133" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="53r-dK-rqc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Undo"/>
+                                        <connections>
+                                            <action selector="undoTapped:" destination="y5L-UI-3h2" eventType="touchUpInside" id="5Sf-0u-spu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V69-1r-AuU">
+                                        <rect key="frame" x="266" y="0.0" width="133" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="RGp-J0-xtt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Angles"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmr-Ki-Uuy">
+                                        <rect key="frame" x="399" y="0.0" width="133" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="J7Z-Qn-KZv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Record"/>
+                                        <connections>
+                                            <action selector="recordTapped:" destination="y5L-UI-3h2" eventType="touchUpInside" id="7iL-kM-foo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMz-Vx-akS">
+                                        <rect key="frame" x="532" y="0.0" width="133" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="133" id="Mnh-1f-Ih5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Stop"/>
+                                        <connections>
+                                            <action selector="stopTapped:" destination="y5L-UI-3h2" eventType="touchUpInside" id="25R-Th-Jbv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="204" id="Y6q-kP-LLN"/>
+                                    <constraint firstAttribute="height" constant="46" id="DRM-Mo-gea"/>
+                                    <constraint firstAttribute="width" constant="665" id="Z7g-0i-WeW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="CLEAR"/>
-                                <connections>
-                                    <action selector="clearTapped:" destination="y5L-UI-3h2" eventType="touchUpInside" id="ye8-JJ-E15"/>
-                                </connections>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="ebX-Nf-KYa" firstAttribute="top" secondItem="Tw2-wM-MOr" secondAttribute="bottom" constant="842" id="Yd9-nK-n1C"/>
-                            <constraint firstItem="MoR-ip-oms" firstAttribute="top" secondItem="ebX-Nf-KYa" secondAttribute="bottom" constant="20" id="dWS-uP-9J4"/>
-                            <constraint firstItem="ebX-Nf-KYa" firstAttribute="centerX" secondItem="M8z-af-QRb" secondAttribute="centerX" id="fRU-UK-rpM"/>
+                            <constraint firstItem="MoR-ip-oms" firstAttribute="top" secondItem="Q65-Ly-vTJ" secondAttribute="bottom" constant="54" id="Fi3-3O-S87"/>
+                            <constraint firstItem="Q65-Ly-vTJ" firstAttribute="centerX" secondItem="M8z-af-QRb" secondAttribute="centerX" id="kyR-oC-ZY2"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XQw-e8-ng4"/>
