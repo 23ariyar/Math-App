@@ -13,6 +13,7 @@
 		B8BAC3E326C4E95400B61371 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3E026C4E95400B61371 /* Base.lproj */; };
 		B8BAC3E426C4E95400B61371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */; };
 		B8BAC3EC26C4E9D800B61371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3EB26C4E9D800B61371 /* Assets.xcassets */; };
+		B8BAC46626C4FADF00B61371 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8BAC46526C4FADF00B61371 /* LoginViewController.swift */; };
 		D5434AD5CBE4429FDA893967 /* Pods_Test3_Test3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B95E40463672358030FDA83 /* Pods_Test3_Test3UITests.framework */; };
 		ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F87324AAB6800058D14A /* AppDelegate.swift */; };
 		ED29F87624AAB6800058D14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F87524AAB6800058D14A /* ViewController.swift */; };
@@ -61,6 +62,7 @@
 		B8BAC3E026C4E95400B61371 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8BAC3EB26C4E9D800B61371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
+		B8BAC46526C4FADF00B61371 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D0A4BE0F8AB30FAF3509A8E3 /* Pods-Test3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3.debug.xcconfig"; path = "Target Support Files/Pods-Test3/Pods-Test3.debug.xcconfig"; sourceTree = "<group>"; };
 		D56487C366372AC03C0DA4B8 /* Pods-Test3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3Tests.release.xcconfig"; path = "Target Support Files/Pods-Test3Tests/Pods-Test3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED29F87024AAB6800058D14A /* Test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +170,7 @@
 				B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */,
 				ED29F8A924AD6E790058D14A /* DrawingViewController.swift */,
 				ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */,
+				B8BAC46526C4FADF00B61371 /* LoginViewController.swift */,
 			);
 			path = Test3;
 			sourceTree = "<group>";
@@ -379,9 +382,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test3/Pods-Test3-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
@@ -389,9 +394,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
@@ -431,9 +438,11 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Test3-Test3UITests/Pods-Test3-Test3UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
 				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
@@ -441,9 +450,11 @@
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
@@ -487,6 +498,7 @@
 				ED29F8AA24AD6E790058D14A /* DrawingViewController.swift in Sources */,
 				ED29F8A824AD684F0058D14A /* CalcViewController.swift in Sources */,
 				ED29F8BE24AD97CD0058D14A /* NumberLineViewController.swift in Sources */,
+				B8BAC46626C4FADF00B61371 /* LoginViewController.swift in Sources */,
 				3A06740D26B0A63B00EDD567 /* GeometryViewController.swift in Sources */,
 				ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */,
 				3A2CFC2126B1E232005FA4C2 /* GeometryStructures.swift in Sources */,
