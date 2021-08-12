@@ -13,7 +13,6 @@
 		B8BAC3E326C4E95400B61371 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3E026C4E95400B61371 /* Base.lproj */; };
 		B8BAC3E426C4E95400B61371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */; };
 		B8BAC3EC26C4E9D800B61371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3EB26C4E9D800B61371 /* Assets.xcassets */; };
-		B8BAC42026C4EF7700B61371 /* Test3.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC41F26C4EF7700B61371 /* Test3.xcworkspace */; };
 		D5434AD5CBE4429FDA893967 /* Pods_Test3_Test3UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B95E40463672358030FDA83 /* Pods_Test3_Test3UITests.framework */; };
 		ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F87324AAB6800058D14A /* AppDelegate.swift */; };
 		ED29F87624AAB6800058D14A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED29F87524AAB6800058D14A /* ViewController.swift */; };
@@ -62,7 +61,6 @@
 		B8BAC3E026C4E95400B61371 /* Base.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base.lproj; sourceTree = "<group>"; };
 		B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B8BAC3EB26C4E9D800B61371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Assets.xcassets"; sourceTree = "<group>"; };
-		B8BAC41F26C4EF7700B61371 /* Test3.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = Test3.xcworkspace; sourceTree = "<group>"; };
 		D0A4BE0F8AB30FAF3509A8E3 /* Pods-Test3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3.debug.xcconfig"; path = "Target Support Files/Pods-Test3/Pods-Test3.debug.xcconfig"; sourceTree = "<group>"; };
 		D56487C366372AC03C0DA4B8 /* Pods-Test3Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3Tests.release.xcconfig"; path = "Target Support Files/Pods-Test3Tests/Pods-Test3Tests.release.xcconfig"; sourceTree = "<group>"; };
 		ED29F87024AAB6800058D14A /* Test3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test3.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,7 +127,6 @@
 		ED29F86724AAB6800058D14A = {
 			isa = PBXGroup;
 			children = (
-				B8BAC41F26C4EF7700B61371 /* Test3.xcworkspace */,
 				ED29F87224AAB6800058D14A /* Test3 */,
 				ED29F88724AAB6810058D14A /* Test3Tests */,
 				ED29F89224AAB6810058D14A /* Test3UITests */,
@@ -327,7 +324,6 @@
 				ED29F8BC24AD91F20058D14A /* square.png in Resources */,
 				ED29F8B424AD77DC0058D14A /* triangle.png in Resources */,
 				ED29F8A424AAD98D0058D14A /* chem.png in Resources */,
-				B8BAC42026C4EF7700B61371 /* Test3.xcworkspace in Resources */,
 				B8BAC3E426C4E95400B61371 /* GoogleService-Info.plist in Resources */,
 				B8BAC3E326C4E95400B61371 /* Base.lproj in Resources */,
 				ED29F8AC24AD746E0058D14A /* circle.png in Resources */,
