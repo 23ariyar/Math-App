@@ -14,8 +14,7 @@ struct PointFactory {
     var radius:CGFloat = 40
     var points = [UIButton]()
     
-    //add it to the view of the thing its being called in idfk
-    mutating func makeDot(location: CGPoint, action:Selector? = nil) -> UIButton {
+    mutating func makeDot(location: CGPoint, action:Selector? = nil) -> UIButton { //Creates a dot given the specifications of the struct
         let point = UIButton(frame: CGRect(origin: location, size: CGSize(width: radius, height: radius)))
         point.layer.cornerRadius = radius/2
         point.layer.masksToBounds = true
@@ -25,7 +24,7 @@ struct PointFactory {
         return point
     }
     
-    func clear() {
+    func clear() { // Clear all points from this factory
         for point in points{
             point.removeFromSuperview()
         }
@@ -37,7 +36,7 @@ struct LineFactory {
     var color: UIColor
     var lines = [CAShapeLayer]()
         
-    mutating func makeLine(start: CGPoint, end:CGPoint, circle_radius:CGFloat) -> CAShapeLayer{
+    mutating func makeLine(start: CGPoint, end:CGPoint, circle_radius:CGFloat) -> CAShapeLayer{ //Creates a line given the specifications of the struct
         let path = UIBezierPath()
         
         path.move(to: CGPoint(x: start.x + circle_radius/2, y: start.y + circle_radius/2))
@@ -52,12 +51,9 @@ struct LineFactory {
         return shape_layer
     }
     
-    func clear() {
+    func clear() { // Clear all lines from this factory
         for line in lines {
             line.removeFromSuperlayer()
         }
     }
-    
-
 }
-

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3A06740D26B0A63B00EDD567 /* GeometryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */; };
 		3A2CFC2126B1E232005FA4C2 /* GeometryStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CFC2026B1E232005FA4C2 /* GeometryStructures.swift */; };
+		3AF59DA126C8747E00BABC62 /* PDFs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF59DA026C8747E00BABC62 /* PDFs.swift */; };
 		43944ED50568180CD22E8B1C /* Pods_Test3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6C11A2D1AD0A58C94A4ACB /* Pods_Test3.framework */; };
 		B8BAC3E326C4E95400B61371 /* Base.lproj in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3E026C4E95400B61371 /* Base.lproj */; };
 		B8BAC3E426C4E95400B61371 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryViewController.swift; sourceTree = "<group>"; };
 		3A2CFC2026B1E232005FA4C2 /* GeometryStructures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryStructures.swift; sourceTree = "<group>"; };
+		3AF59DA026C8747E00BABC62 /* PDFs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFs.swift; sourceTree = "<group>"; };
 		3D30266DF81BF4B5493619BC /* Pods-Test3-Test3UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3-Test3UITests.debug.xcconfig"; path = "Target Support Files/Pods-Test3-Test3UITests/Pods-Test3-Test3UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4E220DB0E48BBAD6A8321F9D /* Pods-Test3-Test3UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3-Test3UITests.release.xcconfig"; path = "Target Support Files/Pods-Test3-Test3UITests/Pods-Test3-Test3UITests.release.xcconfig"; sourceTree = "<group>"; };
 		6856224047A19C7D7A7BBD65 /* Pods-Test3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test3.release.xcconfig"; path = "Target Support Files/Pods-Test3/Pods-Test3.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				3A2CFC2026B1E232005FA4C2 /* GeometryStructures.swift */,
 				ED29F87F24AAB6800058D14A /* Info.plist */,
 				ED29F87724AAB6800058D14A /* Main.storyboard */,
+				3AF59DA026C8747E00BABC62 /* PDFs.swift */,
 				ED29F87C24AAB6800058D14A /* LaunchScreen.storyboard */,
 				B8BAC3E026C4E95400B61371 /* Base.lproj */,
 				B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */,
@@ -499,6 +502,7 @@
 				ED29F8A824AD684F0058D14A /* CalcViewController.swift in Sources */,
 				ED29F8BE24AD97CD0058D14A /* NumberLineViewController.swift in Sources */,
 				B8BAC46626C4FADF00B61371 /* LoginViewController.swift in Sources */,
+				3AF59DA126C8747E00BABC62 /* PDFs.swift in Sources */,
 				3A06740D26B0A63B00EDD567 /* GeometryViewController.swift in Sources */,
 				ED29F87424AAB6800058D14A /* AppDelegate.swift in Sources */,
 				3A2CFC2126B1E232005FA4C2 /* GeometryStructures.swift in Sources */,

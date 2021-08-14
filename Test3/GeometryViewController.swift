@@ -21,7 +21,6 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
 
         let tap = UITapGestureRecognizer(target:self, action:#selector(self.createDot(_: )))
         self.view.backgroundColor = .white
-        tap.numberOfTapsRequired = 1
         view.addGestureRecognizer(tap)
 
     }
@@ -53,6 +52,10 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     @IBAction func undoTapped(_ sender: Any) {
     }
     
+    @IBAction func pdfTapped(_ sender: Any) {
+        takeScreenshot()
+    }
+    
     @IBAction func recordTapped(_ sender: Any) {
     }
     
@@ -62,6 +65,8 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 }
+
+
