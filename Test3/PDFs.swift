@@ -12,7 +12,7 @@ import PDFKit
 
 var screenshot_num: Int = 1
 
-//NOTE: This error appears regardless - nw_protocol_get_quic_image_block_invoke dlopen libquic failed
+//TODO:
 public func takeScreenshot() -> UIImage? {
         
         var image :UIImage? // Creates UI Image
@@ -25,7 +25,7 @@ public func takeScreenshot() -> UIImage? {
         UIGraphicsEndImageContext()
     
         let pdfDocument = PDFDocument() //Init PDF Document
-        let pdfPage = PDFPage(image: image!) // Create a PDF Page of thhe image
+        let pdfPage = PDFPage(image: image!) // Create a PDF Page of the image
         pdfDocument.insert(pdfPage!, at: 0) // Insert the PDF Page into the PDF Document
     
         let data = pdfDocument.dataRepresentation()

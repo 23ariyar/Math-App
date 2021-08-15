@@ -9,12 +9,17 @@
 import Foundation
 import UIKit
 
+/// This struct is a factory for points
 struct PointFactory {
     var color:UIColor = .black
     var radius:CGFloat = 40
     var points = [UIButton]()
     
-    mutating func makeDot(location: CGPoint, action:Selector? = nil) -> UIButton { //Creates a dot given the specifications of the struct
+    
+    /**
+     This function creates a dot given to the specification of the point factory struct. The return value must be added to the view in order to be visible
+     */
+    mutating func makeDot(location: CGPoint, action:Selector? = nil) -> UIButton {
         let point = UIButton(frame: CGRect(origin: location, size: CGSize(width: radius, height: radius)))
         point.layer.cornerRadius = radius/2
         point.layer.masksToBounds = true
@@ -24,18 +29,25 @@ struct PointFactory {
         return point
     }
     
-    func clear() { // Clear all points from this factory
+    /**
+     Clear all points from this factory
+     */
+    func clear() {
         for point in points{
             point.removeFromSuperview()
         }
     }
 }
 
+/// This struct is a factory for making lines - good for grouping together
 struct LineFactory {
     var weight: CGFloat
     var color: UIColor
     var lines = [CAShapeLayer]()
         
+    /**
+     This function creates a dot given to the specification of the line factory struct. The return value must be added to the view in order to be visible
+     */
     mutating func makeLine(start: CGPoint, end:CGPoint, circle_radius:CGFloat) -> CAShapeLayer{ //Creates a line given the specifications of the struct
         let path = UIBezierPath()
         
@@ -51,7 +63,10 @@ struct LineFactory {
         return shape_layer
     }
     
-    func clear() { // Clear all lines from this factory
+    /**
+     Clear all points from this factory
+     */
+    func clear() {
         for line in lines {
             line.removeFromSuperlayer()
         }

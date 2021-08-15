@@ -36,7 +36,7 @@
                                         <rect key="frame" x="48" y="117" width="85" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Geometry"/>
+                                        <state key="normal" title="Draw"/>
                                         <connections>
                                             <segue destination="y5L-UI-3h2" kind="show" id="FPL-cz-oO4"/>
                                         </connections>
@@ -63,7 +63,7 @@
                                         <rect key="frame" x="23" y="330" width="136" height="91"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Draw"/>
+                                        <state key="normal" title="Shapes"/>
                                         <connections>
                                             <segue destination="Ufh-Y0-vsG" kind="show" id="mRv-Qb-d9G"/>
                                         </connections>

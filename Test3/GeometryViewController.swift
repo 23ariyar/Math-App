@@ -6,6 +6,9 @@
 //  Copyright © 2021 CFN. All rights reserved.
 //
 
+/**
+ 
+ */
 import UIKit
 import ReplayKit
 
@@ -18,19 +21,20 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let tap = UITapGestureRecognizer(target:self, action:#selector(self.createDot(_: )))
+        let tap = UITapGestureRecognizer(target:self, action:#selector(self.createDot(_: ))) // Sets up tap recognizer
         self.view.backgroundColor = .white
         view.addGestureRecognizer(tap)
-
     }
     
+    // Upon tapping an empty area in the screen, creates a point
     @objc func createDot(_ touch: UITapGestureRecognizer? = nil) {
         let point = point_factory.makeDot(location: touch!.location(in:self.view), action:#selector(self.formLine(_: )))
         self.view.addSubview(point)
         activated_button = nil
     }
     
+    // Upon tapping two buttons in sequence, draw a line between the two
+    // Or if only tapping one button, make it active
     @objc func formLine(_ button: UIButton? = nil) {
         if activated_button == nil {
             activated_button = button
@@ -42,16 +46,15 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
         }
     }
     
-    
     @IBAction func clearTapped(_ sender: Any) {
         point_factory.clear()
         line_factory.clear()
     }
-    
 
     @IBAction func undoTapped(_ sender: Any) {
     }
     
+    //Upon hitting the PDF button, take a screenshot, convert to PDF, and save
     @IBAction func pdfTapped(_ sender: Any) {
         takeScreenshot()
     }
