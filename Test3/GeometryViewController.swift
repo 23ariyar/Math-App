@@ -2,7 +2,7 @@
 //  GeometryViewController.swift
 //  Test3
 //
-//  Created by ariya redddyy on 7/27/21.
+//  Created by Ariya Reddy on 7/27/21.
 //  Copyright © 2021 CFN. All rights reserved.
 //
 
@@ -56,19 +56,17 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     
     //Upon hitting the PDF button, take a screenshot, convert to PDF, and save
     @IBAction func pdfTapped(_ sender: Any) {
-        takeScreenshot()
+       let _ = takeScreenshot()
     }
     
     @IBAction func recordTapped(_ sender: Any) {
     }
-    
     
     @IBAction func stopTapped(_ sender: Any) {
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
     }
 }
 

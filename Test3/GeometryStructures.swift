@@ -2,7 +2,7 @@
 //  GeometryStructures.swift
 //  Test3
 //
-//  Created by ariya redddyy on 7/28/21.
+//  Created by Ariya Reddy on 7/28/21.
 //  Copyright © 2021 CFN. All rights reserved.
 //
 

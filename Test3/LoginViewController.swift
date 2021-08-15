@@ -14,8 +14,8 @@ class LoginViewController: UIViewController {
 
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
-    @IBOutlet var message: UILabel!
-
+    @IBOutlet weak var message: UILabel!
+    
     @IBAction func login(_ sender: UIButton) {
         guard let email = email.text, !email.isEmpty else {
             setMessage(msg: "Email or Password field cannot be empty")

@@ -498,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FN9-6m-aGx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2393" y="1452"/>
+            <point key="canvasLocation" x="2355" y="1492"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="2F4-JT-0L7">
@@ -548,6 +548,16 @@
                                     <action selector="signUp:" destination="3Ku-vF-Nf0" eventType="touchUpInside" id="zJZ-ZS-fgj"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iMv-zo-by5">
+                                <rect key="frame" x="93" y="610" width="583" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="583" id="7qe-gQ-tyX"/>
+                                    <constraint firstAttribute="height" constant="89" id="Gcd-rO-nfA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -561,19 +571,22 @@
                             <constraint firstItem="mcZ-Ww-pEK" firstAttribute="top" secondItem="49z-gc-rqY" secondAttribute="bottom" constant="55" id="aex-HE-6Wb"/>
                             <constraint firstItem="mcZ-Ww-pEK" firstAttribute="top" secondItem="GMZ-Ud-Y3O" secondAttribute="top" id="dZu-QO-9pX"/>
                             <constraint firstItem="GMZ-Ud-Y3O" firstAttribute="leading" secondItem="mcZ-Ww-pEK" secondAttribute="trailing" constant="81" id="dxV-Hz-Kfg"/>
+                            <constraint firstItem="iMv-zo-by5" firstAttribute="centerX" secondItem="49z-gc-rqY" secondAttribute="centerX" id="hOp-2u-6ud"/>
                             <constraint firstItem="xII-2d-1jC" firstAttribute="trailing" secondItem="49z-gc-rqY" secondAttribute="trailing" id="otB-wF-oCx"/>
+                            <constraint firstItem="iMv-zo-by5" firstAttribute="top" secondItem="mcZ-Ww-pEK" secondAttribute="bottom" constant="70" id="qQt-xv-xiK"/>
                             <constraint firstItem="mcZ-Ww-pEK" firstAttribute="baseline" secondItem="GMZ-Ud-Y3O" secondAttribute="baseline" id="xOL-Mz-ebM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8eC-k2-a9M"/>
                     <connections>
                         <outlet property="email" destination="xII-2d-1jC" id="4zu-0j-q1z"/>
+                        <outlet property="message" destination="iMv-zo-by5" id="twc-9R-RXO"/>
                         <outlet property="password" destination="49z-gc-rqY" id="1tP-Kz-tjg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8I4-b8-78c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3112.5" y="1452.5390625"/>
+            <point key="canvasLocation" x="3045" y="1492"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="lck-1N-Pvw">
