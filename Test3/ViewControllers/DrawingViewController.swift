@@ -9,8 +9,6 @@
 import UIKit
 
 class DrawingViewController: UIViewController {
-
-    
     
     @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var triangle: UIImageView!
@@ -52,9 +50,7 @@ class DrawingViewController: UIViewController {
         else {
             square.isHidden = true
         }
-        
         showSquare = !showSquare
-        
     }
     
     

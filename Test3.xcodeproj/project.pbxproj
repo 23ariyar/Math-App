@@ -118,6 +118,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AFB269C26C98B0B00DF0CD9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED29F8A924AD6E790058D14A /* DrawingViewController.swift */,
+				ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */,
+				B8BAC46526C4FADF00B61371 /* LoginViewController.swift */,
+				3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */,
+				ED29F87524AAB6800058D14A /* ViewController.swift */,
+				ED29F8A724AD684F0058D14A /* CalcViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3AFB269D26C98BD300DF0CD9 /* StructsAndFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				3AF59DA026C8747E00BABC62 /* PDFs.swift */,
+				3A2CFC2026B1E232005FA4C2 /* GeometryStructures.swift */,
+			);
+			path = StructsAndFunctions;
+			sourceTree = "<group>";
+		};
 		3EA3A65767E1CBF7637845DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,20 +182,14 @@
 			isa = PBXGroup;
 			children = (
 				B8BAC3EB26C4E9D800B61371 /* Assets.xcassets */,
-				ED29F8A724AD684F0058D14A /* CalcViewController.swift */,
 				ED29F87324AAB6800058D14A /* AppDelegate.swift */,
-				ED29F87524AAB6800058D14A /* ViewController.swift */,
-				3A06740C26B0A63B00EDD567 /* GeometryViewController.swift */,
-				3A2CFC2026B1E232005FA4C2 /* GeometryStructures.swift */,
+				3AFB269D26C98BD300DF0CD9 /* StructsAndFunctions */,
 				ED29F87F24AAB6800058D14A /* Info.plist */,
+				3AFB269C26C98B0B00DF0CD9 /* ViewControllers */,
 				ED29F87724AAB6800058D14A /* Main.storyboard */,
-				3AF59DA026C8747E00BABC62 /* PDFs.swift */,
 				ED29F87C24AAB6800058D14A /* LaunchScreen.storyboard */,
 				B8BAC3E026C4E95400B61371 /* Base.lproj */,
 				B8BAC3E126C4E95400B61371 /* GoogleService-Info.plist */,
-				ED29F8A924AD6E790058D14A /* DrawingViewController.swift */,
-				ED29F8BD24AD97CD0058D14A /* NumberLineViewController.swift */,
-				B8BAC46526C4FADF00B61371 /* LoginViewController.swift */,
 			);
 			path = Test3;
 			sourceTree = "<group>";
