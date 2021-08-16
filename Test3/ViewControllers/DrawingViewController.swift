@@ -13,52 +13,22 @@ class DrawingViewController: UIViewController {
     @IBOutlet weak var circle: UIImageView!
     @IBOutlet weak var triangle: UIImageView!
     @IBOutlet weak var square: UIImageView!
-    
-    var showCircle = false
-    var showTri = false
-    var showSquare = false
-    
+
     @IBAction func drawCircle(_ sender: UIButton) {
-        
-        if (showCircle == false) {
-            circle.isHidden = false
-        }
-        else {
-            circle.isHidden = true
-        }
-        
-        showCircle = !showCircle
+        circle.isHidden = !circle.isHidden
     }
     
     @IBAction func drawTriangle(_ sender: UIButton) {
-        
-        if (showTri == false) {
-            triangle.isHidden = false
-        }
-        else {
-            triangle.isHidden = true
-        }
-        
-        showTri = !showTri
-        
+        triangle.isHidden = !triangle.isHidden
     }
+    
     @IBAction func drawSquare(_ sender: Any) {
-        
-        if (showSquare == false) {
-            square.isHidden = false
-        }
-        else {
-            square.isHidden = true
-        }
-        showSquare = !showSquare
+        square.isHidden = !square.isHidden
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        circle.isHidden = !showCircle
-        triangle.isHidden = !showTri
-        square.isHidden = !showSquare
     }
 
     override func didReceiveMemoryWarning() {

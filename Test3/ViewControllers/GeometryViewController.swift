@@ -16,8 +16,7 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
 
     let circle_radius = CGFloat(40)
     var activated_button: UIButton? = nil
-    var point_factory = PointFactory(color: .black, radius: CGFloat(40))
-    var line_factory = LineFactory(weight: CGFloat(40)/2, color:.black)
+    var shape_factory = ShapeFactory(line_properties: (weight: CGFloat(40)/2, color: .black), point_properties: (radius: CGFloat(40), color: .black))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +27,7 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     
     // Upon tapping an empty area in the screen, creates a point
     @objc func createDot(_ touch: UITapGestureRecognizer? = nil) {
-        let point = point_factory.makeDot(location: touch!.location(in:self.view), action:#selector(self.formLine(_: )))
+        let point = shape_factory.makePoint(location: touch!.location(in:self.view), action:#selector(self.formLine(_: )))
         self.view.addSubview(point)
         activated_button = nil
     }
@@ -40,18 +39,18 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
             activated_button = button
         }
         else {
-            let line = line_factory.makeLine(start:activated_button!.frame.origin, end:button!.frame.origin, circle_radius:circle_radius)
+            let line = shape_factory.makeLine(start:activated_button!.frame.origin, end:button!.frame.origin, circle_radius:circle_radius)
             view.layer.addSublayer(line)
             activated_button = nil
         }
     }
     
     @IBAction func clearTapped(_ sender: Any) {
-        point_factory.clear()
-        line_factory.clear()
+        shape_factory.clear()
     }
 
     @IBAction func undoTapped(_ sender: Any) {
+        shape_factory.undo()
     }
     
     //Upon hitting the PDF button, take a screenshot, convert to PDF, and save
