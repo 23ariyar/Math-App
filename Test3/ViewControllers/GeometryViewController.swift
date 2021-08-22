@@ -27,8 +27,7 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     
     // Upon tapping an empty area in the screen, creates a point
     @objc func createDot(_ touch: UITapGestureRecognizer? = nil) {
-        let point = shape_factory.makePoint(location: touch!.location(in:self.view), action:#selector(self.formLine(_: )))
-        self.view.addSubview(point)
+        let _ = shape_factory.makePoint(location: touch!.location(in:self.view), action:#selector(self.formLine(_: )), view: self)
         activated_button = nil
     }
     
@@ -37,12 +36,11 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     @objc func formLine(_ button: UIButton? = nil) {
         if activated_button == nil {
             activated_button = button
+            return
         }
-        else {
-            let line = shape_factory.makeLine(start:activated_button!.frame.origin, end:button!.frame.origin, circle_radius:circle_radius)
-            view.layer.addSublayer(line)
-            activated_button = nil
-        }
+        
+        let _ = shape_factory.makeLine(start:activated_button!.frame.origin, end:button!.frame.origin, circle_radius:circle_radius, view: self)
+        activated_button = nil
     }
     
     @IBAction func clearTapped(_ sender: Any) {
@@ -61,8 +59,12 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     @IBAction func recordTapped(_ sender: Any) {
     }
     
+    
+    
     @IBAction func stopTapped(_ sender: Any) {
     }
+    
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
