@@ -9,14 +9,23 @@
 /**
  
  */
+import Foundation
 import UIKit
+import PDFKit
 import ReplayKit
+import Firebase
+import FirebaseAuth
 
-class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate {
+import MessageUI
+// Send pdf screenshot to email
+// Should implement a better way of saving work
+
+class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate, MFMailComposeViewControllerDelegate {
 
     let circle_radius = CGFloat(40)
     var activated_button: UIButton? = nil
     var shape_factory = ShapeFactory(line_properties: (weight: CGFloat(40)/2, color: .black), point_properties: (radius: CGFloat(40), color: .black))
+    @IBOutlet var saveStatus: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,9 +74,58 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
     }
     
     
+    /**
+     Takes a screenshot and emails it to user
+     */
+    @IBAction func emailTapped(_ sender: Any) {
+        sendPDF(url: takeScreenshot()!.1)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+
+    /**
+     Cahnges Save Status Label to a new status
+     */
+    func updateSaveStatus(_ status: String) {
+        saveStatus.text = status
+    }
+    
+    /**
+     Sends PDF to logged in email
+     
+     - Note: Does not run on simulator
+     */
+    func sendPDF(url: URL) {
+        // Check auth status
+        guard Auth.auth().currentUser != nil else {
+            self.updateSaveStatus("No account logged in")
+            return
+        }
+        guard MFMailComposeViewController.canSendMail() else {
+            self.updateSaveStatus("Device cannot send mail")
+            return
+        }
+        
+        do {
+            // Send email to usr with attached pdf
+            let attach = try Data(contentsOf: url)
+            let email = Auth.auth().currentUser!.email!
+            
+            let mail = MFMailComposeViewController()
+            mail.mailComposeDelegate = self
+            mail.setToRecipients([email])
+            mail.setSubject("CFN APP SCREENSHOT TEST")
+            mail.setMessageBody("", isHTML: false)
+            mail.addAttachmentData(attach, mimeType: "application/pdf", fileName: "CFN_APP_SCREENSHOT")
+            self.present(mail, animated: true
+                , completion: nil)
+        }
+        catch let error {
+            print("We have encountered error \(error.localizedDescription)")
+        }
+
     }
 }
 
