@@ -15,7 +15,7 @@ var screenshot_num: Int = 1
 /**
  Takes screenshot of respective view and converts to PDF. Path of PDF is the default path
  */
-public func takeScreenshot() -> PDFDocument? {
+public func takeScreenshot() -> (PDFDocument, URL)? {
         
     var image :UIImage? // Creates UI Image
     let layer = UIApplication.shared.keyWindow!.layer
@@ -36,7 +36,7 @@ public func takeScreenshot() -> PDFDocument? {
  
  Prints out path of directory. Can copy and paste into browser in simulator to view
  */
-public func imageToPDF(image: UIImage?) -> PDFDocument? {
+public func imageToPDF(image: UIImage?) -> (PDFDocument, URL)? {
     let pdfDocument = PDFDocument() //Init PDF Document
     let pdfPage = PDFPage(image: image!) // Create a PDF Page of the image
     pdfDocument.insert(pdfPage!, at: 0) // Insert the PDF Page into the PDF Document
@@ -54,5 +54,5 @@ public func imageToPDF(image: UIImage?) -> PDFDocument? {
     print(docURL) //If you paste this URL into safari (on the ipad), the image displays
     screenshot_num += 1
     
-    return pdfDocument
+    return (pdfDocument, docURL)
 }
