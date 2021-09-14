@@ -54,7 +54,6 @@ struct ShapeFactory {
         objects.append(Shape.point(point))
         view?.view.addSubview(point) //if view given, automatically add the point
         return point
-        
     }
     
     /**

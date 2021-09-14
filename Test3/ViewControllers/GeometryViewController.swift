@@ -72,3 +72,10 @@ class GeometryViewController: UIViewController, RPPreviewViewControllerDelegate 
 }
 
 
+struct FreshmanStruct {
+    var age: Int = 14
+    var name: String
+}
+
+var aaron = FreshmanStruct(name: "aaron")
+var olderFreshman = FreshmanStruct(age: 19, name: "boris")

@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "BaseNetworkKit",
+        "repositoryURL": "https://github.com/thejohnlima/BaseNetworkKit.git",
+        "state": {
+          "branch": null,
+          "revision": "c0a8b93d54ef64ab0cff897c18263b44d7c8efe1",
+          "version": "1.1.2"
+        }
+      },
+      {
+        "package": "SWMailgun",
+        "repositoryURL": "https://github.com/thejohnlima/SWMailgun.git",
+        "state": {
+          "branch": null,
+          "revision": "8d65af4233e7dfb01ae2251f69e5460c779d4abd",
+          "version": "1.0.7"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -15,7 +15,6 @@ class LoginViewController: UIViewController {
     @IBOutlet var email: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet weak var message: UILabel!
-    
     /**
     Custom error for reading logins
      */
